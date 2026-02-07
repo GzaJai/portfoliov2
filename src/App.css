@@ -1,0 +1,40 @@
+header {
+  width: 100dvw;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+header h1 {
+  font-size: 4rem;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav li a:hover {
+  color: #AD886E;
+}
+
+main {
+  width: 100dvw;
+  height: 100dvh;
+  margin: 6rem 0 0;
+}
+
+section {
+  width: 100%;
+}
+
+.hero {
+  width: 60%;
+  height: 60%;
+}
