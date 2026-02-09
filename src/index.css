@@ -18,7 +18,6 @@ body {
   position: relative;
 }
 
-/* ESTO ES LO IMPORTANTE - El fondo NO debe cambiar de tamaño */
 body::before {
   content: '';
   position: fixed;
@@ -35,7 +34,6 @@ body::before {
   pointer-events: none;
 }
 
-/* Prevenir que el body se encoja */
 #root {
   width: 100%;
   position: relative;
