@@ -16,21 +16,23 @@ function App() {
 
   return (
     <>
-      <header className={`duration-200 ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
-        <div className='flex h-20 w-full px-20 items-center justify-between'>
-          <div className='max-md:hidden'>
-            <img className='w-20  bg-indigo-400 p-[.1rem] rounded-full max-md:hidden' src='/public/yo-portfolio.png'/>
-            <p className='ml-10 w-[18rem] text-4xl font-bold'>Gonzalo Jaime</p>
-          </div>
-          <nav className="flex w-full items-center justify-between z-50">
-            <li><CustomLink text={"Home"} href={"#home"} /></li>
-            <li><CustomLink text={"About"} href={"#about"} /></li>
-            <li><CustomLink text={"Contact"} href={"#contact"} /></li>
-          </nav>
-        </div>
-      </header>
+      <section id='home'>
+        <header className={`duration-200 ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
+            <div className='flex h-20 w-full px-20 items-center justify-between'>
+              <div className='max-md:hidden'>
+                <img className='w-20  bg-indigo-400 p-[.1rem] rounded-full max-md:hidden' src='/public/yo-portfolio.png'/>
+                <p className='ml-10 w-[18rem] text-4xl font-bold'>Gonzalo Jaime</p>
+              </div>
+              <nav className="flex w-full items-center justify-between z-50">
+                <li><CustomLink text={"Home"} href={"#home"} /></li>
+                <li><CustomLink text={"About"} href={"#about"} /></li>
+                <li><CustomLink text={"Contact"} href={"#contact"} /></li>
+              </nav>
+            </div>
+        </header>
+      </section>
       <main>
-        <section id='home'>
+        <section>
           <div className="flex flex-col my-54 items-center gap-4">
             <img className='w-60 bg-indigo-400/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' src='/public/yo-portfolio.png'/>
             <h2 className='text-2xl font-bold'>Gonzalo Jaime</h2>
@@ -59,9 +61,9 @@ function App() {
           
         </section>
         <section id='about'>
-          <div className="w-[80%] mx-auto bg-gray-500/15 backdrop-blur-glass rounded-[39px] shadow-2xl p-12 backdrop-filter backdrop-blur-md">
-            <h3 className='w-[80%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>About me</h3>
-            <div className='flex flex-col w-[80%] '>
+          <div className="w-[90%] mx-auto bg-gray-500/15 backdrop-blur-glass rounded-[39px] shadow-2xl p-12 backdrop-filter backdrop-blur-md">
+            <h3 className='w-[90%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>About me</h3>
+            <div className='flex flex-col w-full gap-3'>
                 <p>Hello, I'm Gonzalo Jaime. A full-stack developer from Argentina. </p>
                 <p>Currently I'm studying at the University, but I have done some development courses that give me a pretty solid stack.</p>
                 <p>I got some experience as a freelancer as well. I've done some projects for myself to improve and reinforce my skills, and some other to sell.</p>
