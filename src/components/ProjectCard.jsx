@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ProjectCard = ({ projectName, projectUrl, imageUrl }) => {
+const ProjectCard = ({ projectName, projectUrl, imageUrl, onClick }) => {
   return (
-    <div className="w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl p-8">
+    <div onClick={onClick} className="w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl p-8">
         <div className='flex items-center justify-between mb-8'>
 
             <h4 className='text-center font-bold text-xl'>{projectName}</h4>
