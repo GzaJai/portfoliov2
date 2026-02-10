@@ -44,10 +44,10 @@ function App() {
       <main>
         <section>
           <div className="flex flex-col my-54 items-center gap-4">
-            <img className='w-60 bg-indigo-400/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png' />
+            <img className='w-60 bg-indigo-500/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png' />
             <h2 className='text-2xl font-bold'>Gonzalo Jaime</h2>
-            <h3 className='text-2xl font-semibold'>Developer</h3>
-            <div className='flex w-[50%] justify-center gap-4'>
+            <h3 className='text-2xl font-semibold mt-2'>Developer</h3>
+            <div className='flex w-[50%] justify-center gap-4 mt-8'>
               <a target='_blank' href="https://www.linkedin.com/in/gjaimeguinazu/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#7c86ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
                 >
