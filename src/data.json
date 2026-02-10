@@ -1,0 +1,41 @@
+[
+    {
+        "projects" : [
+            {
+            "id": 0, 
+            "title": "Consultora ALC",
+            "description": "A webpage done for a freelance client.",
+            "image" : "alc-consultora",
+            "url" : "https://consultora-alc.online"
+            },
+            {
+            "id": 1, 
+            "title": "Aplicación de tareas",
+            "description": "A simple to-do app for creating, organizing, and managing daily tasks.",
+            "image" : "todo-app",
+            "url" : "https://todo-app.gonzalojaime.codes/"
+            },
+            {
+            "id": 2, 
+            "title": "Presupuestos Online",
+            "description": "Budget Generator for business.",
+            "image" : "po-compressed",
+            "url" : "https://presupuestos.gonzalojaime.codes/"
+            },
+            {
+            "id": 3, 
+            "title": "Country Hunt",
+            "description": "This is a simple game about matching country flags with their names.",
+            "image" : "ch-compressed",
+            "url" : "https://country-hunt.gonzalojaime.codes/"
+            },
+            {
+            "id": 4, 
+            "title": "Guess the number",
+            "description": "This game consists of guessing a secret four-digit number, receiving “good” for digits that are correct and well-placed, and “regular” for digits that are correct but in the wrong position.",
+            "image" : "gtn-compressed",
+            "url" : "https://guess-the-number.gonzalojaime.codes/"
+            }
+        ]
+    }   
+]
