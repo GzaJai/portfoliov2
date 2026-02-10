@@ -44,7 +44,7 @@ function App() {
       <main>
         <section>
           <div className="flex flex-col my-54 items-center gap-4">
-            <img className='w-60 bg-indigo-400/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' src='/public/yo-portfolio.png'/>
+            <img className='w-60 bg-indigo-400/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png' />
             <h2 className='text-2xl font-bold'>Gonzalo Jaime</h2>
             <h3 className='text-2xl font-semibold'>Developer</h3>
             <div className='flex w-[50%] justify-center gap-4'>
