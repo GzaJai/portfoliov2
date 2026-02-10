@@ -33,9 +33,9 @@ function App() {
                 <img className='w-20  bg-indigo-400 p-[.1rem] rounded-full max-md:hidden' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'/>
                 <p className='ml-10 w-[18rem] text-4xl font-bold'>Gonzalo Jaime</p>
               </div>
-              <nav className="flex w-full items-center justify-between z-50">
-                <li><CustomLink text={"Home"} href={"#home"} /></li>
+              <nav className="flex w-full items-center justify-center z-50">
                 <li><CustomLink text={"About"} href={"#about"} /></li>
+                <li><CustomLink text={"Projects"} href={"#projects"} /></li>
                 <li><CustomLink text={"Contact"} href={"#contact"} /></li>
               </nav>
             </div>
