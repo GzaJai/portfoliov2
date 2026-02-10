@@ -30,7 +30,7 @@ function App() {
         <header className={`duration-200 ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
             <div className='flex h-20 w-full px-20 items-center justify-between'>
               <div className='max-md:hidden'>
-                <img className='w-20  bg-indigo-400 p-[.1rem] rounded-full max-md:hidden' src='/public/yo-portfolio.png'/>
+                <img className='w-20  bg-indigo-400 p-[.1rem] rounded-full max-md:hidden' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'/>
                 <p className='ml-10 w-[18rem] text-4xl font-bold'>Gonzalo Jaime</p>
               </div>
               <nav className="flex w-full items-center justify-between z-50">
