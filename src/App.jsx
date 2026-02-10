@@ -68,15 +68,26 @@ function App() {
           </div>
           
         </section>
-        <section id='about'>
+        <section id='about' className='mb-48'>
           <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>About me</h3>
           <div className="w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl p-12">
             <div className='flex flex-col w-full gap-3'>
                 <p>Hello, I'm Gonzalo Jaime. A full-stack developer from Argentina. </p>
                 <p>Currently I'm studying at the University, but I have done some development courses that give me a pretty solid stack.</p>
                 <p>I got some experience as a freelancer as well. I've done some projects for myself to improve and reinforce my skills, and some other to sell.</p>
+                <p className='text-center font-semibold pt-8 pb-4'>checkout my CV!</p>
               </div>
+              <a className='mx-auto w-full ' href="https://drive.google.com/file/d/1redMsxAEaUpyPs-slkqpAG9fZxGjFUbX/view?pli=1">
+                <svg className='mx-auto w-full ' xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffffde" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+                >
+                  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                  <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+                  <path d="M13 11l1.5 6l1.5 -6" />
+                </svg>
+              </a>
           </div>
+
         </section>
         <section id="projects" className='mt-10'>
           <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>Projects</h3>
