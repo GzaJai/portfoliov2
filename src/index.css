@@ -34,6 +34,15 @@ body::before {
   pointer-events: none;
 }
 
+.animated-bg {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 #root {
   width: 100%;
   position: relative;
