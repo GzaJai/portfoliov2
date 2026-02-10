@@ -4,6 +4,7 @@ import CustomLink from './components/CustomLink'
 import ProjectCard from './components/ProjectCard';
 import dataFromJson from './data.json'
 import ProjectWrapper from './components/ProjectWrapper';
+import { AnimatedBackground } from './components/AnimatedBackground';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <>
+      <AnimatedBackground />
       <section id='home'>
         <header className={`duration-200 ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
             <div className='flex h-20 w-full px-20 items-center justify-between'>
