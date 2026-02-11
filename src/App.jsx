@@ -28,8 +28,8 @@ function App() {
   return (
     <>
       <AnimatedBackground />
-      <section id='home'>
-        <header className={`duration-200 ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
+      <section id='home' className='w-full'>
+        <header className={`duration-200 rounded-b-2xl w-[80%] ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
             <div className='flex h-20 w-full px-20 items-center justify-between'>
               <div className='max-md:hidden'>
                 <img className='w-20  bg-indigo-400 p-[.1rem] rounded-full max-md:hidden' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'/>
