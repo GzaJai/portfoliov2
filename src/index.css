@@ -67,6 +67,10 @@ h1 {
 }
 
 button {
+  background: transparent;
+  color: inherit;
+  -webkit-appearance: none;
+  appearance: none;
   border: 1px solid transparent;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -131,8 +135,5 @@ button:focus-visible {
   }
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
