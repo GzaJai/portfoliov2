@@ -1,11 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const AnimatedLink = ({ href, children }) => {
+const AnimatedLink = ({ href, className = '', children }) => {
   return (
     <motion.a
         href={href}
         target='_blank'
+        className={`inline-block ${className}`}
         animate={{
         scale: [1, 1.05, 1],
       }}
@@ -21,7 +22,6 @@ const AnimatedLink = ({ href, children }) => {
       whileTap={{
         scale: 0.95,
       }}
-      className="inline-block"
         >
         {children}
     </motion.a>
