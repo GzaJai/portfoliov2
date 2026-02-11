@@ -7,18 +7,21 @@ const AnimatedLink = ({ href, children }) => {
         href={href}
         target='_blank'
         animate={{
-            rotate: [0, -2, 2, 0],
-            scale: [1, 1.04, 1],
-        }}
-        transition={{
-            duration: 1.4,
-            repeat: Infinity,
-            ease: "easeInOut",
-        }}
-        whileHover={{
-            rotate: 0,
-            scale: 1.08,
-        }}
+        scale: [1, 1.05, 1],
+      }}
+      transition={{
+        duration: 1.2,
+        repeat: Infinity,
+        repeatDelay: 2.5,
+        ease: "easeInOut",
+      }}
+      whileHover={{
+        scale: 1.05,
+      }}
+      whileTap={{
+        scale: 0.95,
+      }}
+      className="inline-block"
         >
         {children}
     </motion.a>
