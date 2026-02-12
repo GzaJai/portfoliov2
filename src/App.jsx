@@ -49,7 +49,7 @@ function App() {
         </header>
       </section>
       <main>
-        <section>
+        <section id='hero'>
           <div className="flex flex-col my-54 items-center gap-4">
             <img className='w-60 bg-indigo-500/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png' />
             <h2 className='text-2xl font-bold'>Gonzalo Jaime</h2>
@@ -86,6 +86,10 @@ function App() {
         </section>
         <section id='#contact' className='my-18'>
           <ContactForm />
+        </section>
+        <section className='w-full h-12 text-center'>
+            <a href="https://www.linkedin.com/in/gjaimeguinazu/" target='_blank'>Gonzalo Jaime </a>
+             - made with ❤️
         </section>
       </main>
     </>
