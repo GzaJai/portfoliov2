@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react';
 import './App.css'
 import CustomLink from './components/CustomLink'
-import ProjectCard from './components/ProjectCard';
 import dataFromJson from './data.json'
 import ProjectWrapper from './components/ProjectWrapper';
-import { AnimatedBackground } from './components/AnimatedBackground';
-import { motion } from 'framer-motion';
 import AnimatedLink from './components/AnimatedLink';
 import Linkedin from './components/icons/Linkedin';
 import Github from './components/icons/Github';
