@@ -4,7 +4,7 @@ import ProjectDialog from './ProjectDialog'
 import CircleArrowDown from './icons/CircleArrowDown'
 import CircleArrowUp from './icons/CircleArrowUp'
 
-const ProjectWrapper = ({ projects }) => {
+const ProjectWrapper = ({ projects, seeAllText, seeLessText }) => {
   const [showAll, setShowAll] = useState(false)
   const [open, setOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
@@ -31,12 +31,12 @@ const ProjectWrapper = ({ projects }) => {
           {showAll ?
             <button onClick={handleSeeAll} className='flex flex-col mx-auto w-[40%] items-center gap-4 p-2 rounded-lg font-bold text-xl'>
                 <CircleArrowUp width={'48'} height={'48'} stroke={'#ffffde'} strokeWidth={'1.5'} />
-              See less
+              {seeLessText}
             </button>
             :
             <button onClick={handleSeeAll} className='flex flex-col mx-auto w-[40%] items-center gap-4 p-2 rounded-lg font-bold text-xl'>
                 <CircleArrowDown width={'48'} height={'48'} stroke={'#ffffde'} strokeWidth={'1.5'} />
-              See all
+              {seeAllText}
             </button>
           }
       </div>
