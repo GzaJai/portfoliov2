@@ -8,10 +8,13 @@ import Linkedin from './components/icons/Linkedin';
 import Github from './components/icons/Github';
 import CV from './components/icons/CV';
 import ContactForm from './components/ContactForm'
+import { motion, } from 'framer-motion';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
   const [projects, setProjects] = useState([])
+  const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
     if (dataFromJson) {
@@ -28,8 +31,21 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return (
-    <>
+  useEffect(() => {
+    const handleScroll = () => {
+          if (window.scrollY > 300) {
+              setShowScrollTop(true)
+          } else {
+              setShowScrollTop(false)
+          }
+      }
+      
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener('scroll', handleScroll)
+    }, []);
+    
+    return (
+      <>
       <section id='home' className='w-full'>
         <header className={`duration-200 rounded-b-2xl w-[80%] ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
             <div className='flex h-20 w-full px-20 items-center justify-between'>
@@ -89,6 +105,7 @@ function App() {
              - made with ❤️
         </section>
       </main>
+      <ScrollToTop isVisible={showScrollTop} />
     </>
   )
 }
