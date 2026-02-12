@@ -10,6 +10,7 @@ import AnimatedLink from './components/AnimatedLink';
 import Linkedin from './components/icons/Linkedin';
 import Github from './components/icons/Github';
 import CV from './components/icons/CV';
+import ContactForm from './components/ContactForm'
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -83,27 +84,8 @@ function App() {
           <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>Projects</h3>
           <ProjectWrapper projects={projects}/>
         </section>
-        <section id='contact'>
-          <p>Contacto</p>
-          <div className='flex w-[80%] mx-auto mb-32 text-[#333] items-start md:w-[60%] md:mb-52'>
-              <form id="form" className='bg-indigo-400 rounded-lg flex flex-col items-center mx-auto p-8 w-[90%]'>
-                  <div className="p-4 flex flex-col w-[90%]">
-                      <label htmlFor="from_name" className='font-bold'>Name</label>
-                      <input type="text" name="from_name" id="from_name" className='h-8 rounded-md max-w-60 p-3' />
-                  </div>
-                  <div className="p-4 flex flex-col w-[90%]">
-                      <label htmlFor="reply_to" className='font-bold'>Email</label>
-                      <input type="text" name="reply_to" id="reply_to" className='h-8 rounded-md max-w-60 p-3' />
-                  </div>
-                  <div className="p-4 flex flex-col w-[90%]">
-                      <label htmlFor="message" className='font-bold'>Message</label>
-                      <input type="text" name="message" id="message" className='h-24 rounded-md p-3' />
-                  </div>
-
-                  <input type='submit' id="button" className='font-bold bg-indigo-200 hover:bg-orange-500 hover:text-white duration-150 hover:cursor-pointer rounded-lg p-4' />
-              </form>
-
-          </div>
+        <section id='#contact' className='my-18'>
+          <ContactForm />
         </section>
       </main>
     </>
