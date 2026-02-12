@@ -22,10 +22,10 @@ const ScrollToTop = ({ isVisible }) => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={scrollToTop}
-                    className="fixed bottom-8 left-8 z-9999 p-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-2xl backdrop-blur-sm border border-indigo-400/30"
+                    className="fixed bottom-8 left-4 z-9999 p-1 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-2xl backdrop-blur-sm border border-indigo-400/30"
                     aria-label="Scroll to top"
                 >
-                <CircleArrowUp width={48} height={48} stroke={'#FFFFFF'} strokeWidth={1.5} />
+                <CircleArrowUp width={40} height={40} stroke={'#FFFFFF'} strokeWidth={2} />
                 </motion.button>
             )}
         </AnimatePresence>

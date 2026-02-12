@@ -23,8 +23,8 @@ const TranslationBtn = () => {
     }
 
   return (
-    <button onClick={handleLngSwitch} className="fixed bottom-8 right-8 z-9999 p-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-2xl backdrop-blur-sm border border-indigo-400/30">
-        { currentLng=="es"&&<ArgentinaFlag width={40} height={40} />}
+    <button onClick={handleLngSwitch} className="fixed bottom-8 right-4 z-9999 p-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-2xl backdrop-blur-sm border border-indigo-400/30">
+        { currentLng=="es"&&<ArgentinaFlag width={32} height={32} />}
         { currentLng=="en"&&<UkFlag width={40} height={40} />}
     </button>
   )
