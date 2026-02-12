@@ -9,8 +9,8 @@ import Linkedin from './components/icons/Linkedin';
 import Github from './components/icons/Github';
 import CV from './components/icons/CV';
 import ContactForm from './components/ContactForm'
-import { motion, } from 'framer-motion';
 import ScrollToTop from './components/ScrollToTop';
+import TranslationBtn from './components/TranslationBtn';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -109,6 +109,7 @@ function App() {
         </section>
       </main>
       <ScrollToTop isVisible={showScrollTop} />
+      <TranslationBtn />
     </>
   )
 }
