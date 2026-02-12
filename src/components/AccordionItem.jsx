@@ -4,7 +4,7 @@ const AccordionItem = ({ title, children, isOpen, onToggle }) => {
       <button
         type="button"
         onClick={onToggle}
-        className="flex items-center justify-between w-full p-5 font-medium text-body hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+        className="flex items-center justify-between w-full p-5 font-medium text-body text-lg hover:text-heading hover:bg-neutral-secondary-medium gap-3"
       >
         <span>{title}</span>
 
@@ -31,7 +31,7 @@ const AccordionItem = ({ title, children, isOpen, onToggle }) => {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-4 md:p-5 text-body">
+        <div className="p-4 pb-6 md:p-5 text-body">
           {children}
         </div>
       </div>
