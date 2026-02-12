@@ -32,7 +32,6 @@ function App() {
 
   return (
     <>
-      <AnimatedBackground />
       <section id='home' className='w-full'>
         <header className={`duration-200 rounded-b-2xl w-[80%] ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
             <div className='flex h-20 w-full px-20 items-center justify-between'>
