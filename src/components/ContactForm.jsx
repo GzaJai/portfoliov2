@@ -43,7 +43,7 @@ const ContactForm = () => {
                         animate={{ opacity: 1, y: 0, x: 0 }}
                         exit={{ opacity: 0, x: 100 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className={`fixed top-28 right-4 z-50 p-4 rounded-lg shadow-2xl backdrop-blur-sm border ${
+                        className={`fixed top-28 right-4 z-10 p-4 rounded-lg shadow-2xl backdrop-blur-sm border ${
                             notification.type === 'success' 
                                 ? 'bg-indigo-600/90 border-slate-300 text-white' 
                                 : 'bg-red-500/90 border-red-300 text-white'
@@ -84,7 +84,7 @@ const ContactForm = () => {
                 <button 
                     type='submit' 
                     disabled={loading}
-                    className='flex items-center justify-center w-1/2 h-16 font-bold text-center bg-indigo-600 hover:bg-indigo-200/70 hover:text-indigo-600 duration-150 hover:cursor-pointer rounded-lg p-4 mt-6 disabled:opacity-50 disabled:cursor-not-allowed'
+                    className='flex items-center justify-center w-1/2 h-16 font-bold text-center bg-indigo-600 duration-500 ease-in-out  hover:bg-indigo-200/70 hover:text-indigo-600 hover:cursor-pointer rounded-lg p-4 mt-6 disabled:opacity-50 disabled:cursor-not-allowed'
                 >
                     {loading ? <AnimatedLoadingIcon /> : 'Send Message'}
                 </button>

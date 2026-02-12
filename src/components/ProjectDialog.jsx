@@ -9,7 +9,7 @@ import Tooltip from './Tooltip'
 const ProjectDialog = ({ isOpen, onClose, project }) => {  
 
     return (
-        <div onClick={onClose} className={`fixed inset-0 flex justify-center items-center transition-colors ${isOpen ? 'visible bg-black/40' : 'invisible'}`}>
+        <div onClick={onClose} className={`fixed inset-0 flex justify-center items-center transition-colors z-1000 ${isOpen ? 'visible bg-black/40' : 'invisible'}`}>
             <div onClick={e => e.stopPropagation()} className={`bg-slate-900/94 w-[95%] rounded-xl shadow p-6 transition-all ${isOpen ? 'scale-100 opacity-100' : 'scale-125 opacity-0'}`} >
             
             {
