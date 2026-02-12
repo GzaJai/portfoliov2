@@ -12,7 +12,7 @@ const AnimatedLink = ({ href, className = '', children }) => {
         scale: [1, 1.02, 1],
         filter: [
           "drop-shadow(0 0 0px rgba(255,255,255,0))",
-          "drop-shadow(0 0 6px rgba(255,255,255,0.35))",
+          "drop-shadow(0 0 5px rgba(255,255,255,0.5))",
           "drop-shadow(0 0 0px rgba(255,255,255,0))"
         ]
       }}
