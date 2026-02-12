@@ -11,5 +11,21 @@
         "text2": "Currently I'm studying at the University, but I have done some development courses that give me a pretty solid stack.",
         "text3": "I got some experience as a freelancer as well. I've done some projects for myself to improve and reinforce my skills, and some other to sell.",
         "cvText": "checkout my CV!"
-    }
+    },
+    "projects": {
+        "title": "Proyects",
+        "seeAllBtn": "See all",
+        "seeLessBtn": "See less"
+    },
+    "contact": {
+        "title": "Contact me",
+        "title2": "Send me a message",
+        "nameLabel": "Name",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Email",
+        "emailPlaceholder": "johndoe@example.com",
+        "messageLabel": "Message",
+        "sendBtn": "Send Message"
+    },
+    "footer": "made with "
 }
