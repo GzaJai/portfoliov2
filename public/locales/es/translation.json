@@ -1,0 +1,31 @@
+{
+    "developer": "Desarrollador",
+    "nav": {
+        "about": "Conoceme",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "aboutMe": {
+        "title": "Sobre mi",
+        "text1": "Hola, soy Gonzalo Jaime. Desarrollador full-stack Argentino.",
+        "text2": "Actualmente estoy estudiando en la universidad, también he realizado cursos de desarrollo que me han dado un base solida para el desarrollo.",
+        "text3": "Cuento con experiencia como freelancer. He hecho algunos proyectos propios para mejorar y reforzar mis habilidades, y algunos los he comercializado.",
+        "cvText": "Chequea mi CV!"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "seeAllBtn": "Ver más",
+        "seeLessBtn": "Ver menos"
+    },
+    "contact": {
+        "title": "Contactame",
+        "title2": "Enviame un mensaje",
+        "nameLabel": "Nombre",
+        "namePlaceholder": "Juan Perez",
+        "emailLabel": "Email",
+        "emailPlaceholder": "juanperez@ejemplo.com",
+        "messageLabel": "Mensaje",
+        "sendBtn": "Enviar Mensaje"
+    },
+    "footer": "hecho con "
+}
