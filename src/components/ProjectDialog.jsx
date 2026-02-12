@@ -6,7 +6,7 @@ import LinkIcon from './icons/LinkIcon'
 import Github from './icons/Github'
 import Tooltip from './Tooltip'
 
-const ProjectDialog = ({ isOpen, onClose, project }) => {  
+const ProjectDialog = ({ isOpen, onClose, project, lang }) => {
 
     return (
         <div onClick={onClose} className={`fixed inset-0 flex justify-center items-center transition-colors z-1000 ${isOpen ? 'visible bg-black/40' : 'invisible'}`}>
@@ -16,7 +16,7 @@ const ProjectDialog = ({ isOpen, onClose, project }) => {
                 project &&
                 <div className='flex flex-col gap-3'>
                     <div className='flex w-[90%] mx-auto justify-between'>
-                        <h3 className='text-xl font-semibold'>{project.title}</h3>
+                        <h3 className='text-xl font-semibold'>{project.translations[lang].title}</h3>
                         <a href={project.url}>
                         </a>
                         <span onClick={onClose}>
@@ -41,14 +41,14 @@ const ProjectDialog = ({ isOpen, onClose, project }) => {
                             </ul>
                         </AccordionItem>
                         <AccordionItem title={'Purpose'}>
-                            <p className='w-[90%] mx-auto text-lg font-semibold'>{project.purpose}</p>
+                            <p className='w-[90%] mx-auto text-lg font-semibold'>{project.translations[lang].purpose}</p>
                         </AccordionItem>
                         <AccordionItem title="Development">
                             <div className="relative w-[90%] mx-auto">
                                 
                                 <div className="max-h-40 w-[95%] mx-auto overflow-y-auto pr-2 pb-12">
                                     <p className="text-lg font-semibold">
-                                        {project.development_process}
+                                        {project.translations[lang].development_process}
                                     </p>
                                 </div>
 

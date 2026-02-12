@@ -17,7 +17,7 @@ function App() {
   const [projects, setProjects] = useState([])
   const [showScrollTop, setShowScrollTop] = useState(false)
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     if (dataFromJson) {
@@ -98,7 +98,7 @@ function App() {
         </section>
         <section id="projects" className='mt-10'>
           <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>{t("projects.title")}</h3>
-          <ProjectWrapper seeAllText={t("projects.seeAllBtn")} seeLessText={t("projects.seeLessBtn")} projects={projects}/>
+          <ProjectWrapper seeAllText={t("projects.seeAllBtn")} seeLessText={t("projects.seeLessBtn")} projects={projects} lang={i18n.language}/>
         </section>
         <section id='contact' className='my-18'>
           <ContactForm translationText={t("contact")} />

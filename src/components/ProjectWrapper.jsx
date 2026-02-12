@@ -4,7 +4,7 @@ import ProjectDialog from './ProjectDialog'
 import CircleArrowDown from './icons/CircleArrowDown'
 import CircleArrowUp from './icons/CircleArrowUp'
 
-const ProjectWrapper = ({ projects, seeAllText, seeLessText }) => {
+const ProjectWrapper = ({ projects, seeAllText, seeLessText, lang }) => {
   const [showAll, setShowAll] = useState(false)
   const [open, setOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
@@ -25,7 +25,7 @@ const ProjectWrapper = ({ projects, seeAllText, seeLessText }) => {
             projects
               .slice(0, showAll ? projects.length : 2)
               .map((p) => (
-                  <ProjectCard key={p.id} onClick={() => handleClick(p)} projectName={p.title} projectUrl={p.url} imageUrl={p.image}/>
+                  <ProjectCard key={p.id} onClick={() => handleClick(p)} projectName={p.translations[lang].title} projectUrl={p.url} imageUrl={p.image}/>
               ))
           }
           {showAll ?
@@ -40,7 +40,7 @@ const ProjectWrapper = ({ projects, seeAllText, seeLessText }) => {
             </button>
           }
       </div>
-      <ProjectDialog isOpen={open} onClose={() => setOpen(false)} project={selectedProject}/>
+      <ProjectDialog isOpen={open} onClose={() => setOpen(false)} project={selectedProject} lang={lang} />
     </>
   )
 }
