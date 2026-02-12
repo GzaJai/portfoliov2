@@ -34,16 +34,26 @@ const ProjectDialog = ({ isOpen, onClose, project }) => {
                     </div>
                     <Accordion>
                         <AccordionItem title={'Stack'}>
-                            * React
-                            * Tailwindcss
-                            * JavaScript
-                            </AccordionItem>
-                            <AccordionItem title={'Purpose'}>
-                            Entretainment, practice
-                            </AccordionItem>
-                            <AccordionItem title={'Development'}>
-                            Started with some research of other dev's portfolios for some inspo. 
-                            Then I design the structure of it...
+                            <ul className="grid grid-cols-2 w-[80%] mx-auto gap-x-6 gap-y-1">
+                            {project.stack.map((t) => (
+                                <li className='font-semibold text-lg' key={t}>➧ {t}</li>
+                            ))}
+                            </ul>
+                        </AccordionItem>
+                        <AccordionItem title={'Purpose'}>
+                            <p className='w-[90%] mx-auto text-lg font-semibold'>{project.purpose}</p>
+                        </AccordionItem>
+                        <AccordionItem title="Development">
+                            <div className="relative w-[90%] mx-auto">
+                                
+                                <div className="max-h-40 w-[95%] mx-auto overflow-y-auto pr-2 pb-12">
+                                    <p className="text-lg font-semibold">
+                                        {project.development_process}
+                                    </p>
+                                </div>
+
+                                <div className="pointer-events-none absolute bottom-0 left-0 w-full rounded-lg h-12 bg-linear-to-t from-black/30 to-transparent" />
+                            </div>
                         </AccordionItem>
                     </Accordion>
                 </div>
