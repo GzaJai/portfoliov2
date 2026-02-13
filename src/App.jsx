@@ -65,9 +65,9 @@ function App() {
                     />
                   )}
                 </div>
-                <p className='text-4xl font-bold'>Gonzalo Jaime</p>
+                <p className='text-4xl font-bold md:w-80'>Gonzalo Jaime</p>
               </div>
-              <nav className="flex w-full items-center justify-center z-50">
+              <nav className="flex items-center justify-center z-50 md:gap-4 max-sm:w-full">
                 <li><CustomLink text={t("nav.about")} href={"#about"} /></li>
                 <li><CustomLink text={t("nav.projects")} href={"#projects"} /></li>
                 <li><CustomLink text={t("nav.contact")} href={"#contact"} /></li>
@@ -76,31 +76,37 @@ function App() {
           </header>
         </section>
 
-      <main>
-        <section id='hero'>
-          <div className="flex flex-col my-54 items-center gap-4">
-            <div className='w-60 h-60 flex items-center justify-center'>
-              {!scrolled && (
-                <motion.img 
-                  layoutId="profile-image"
-                  className='w-60 h-60 bg-indigo-500/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' 
+        <main>
+          <section id='hero' className='md:pt-3 md:pb-32'>
+            <div className="flex w-[90%] mx-auto my-54 items-center justify-center gap-4 md:gap-24 max-sm:flex-col">
+              <div className='w-60 h-60 flex items-center justify-center md:w-80 md:h-80'>
+                {!scrolled && (
+                  <motion.img 
+                    layoutId="profile-image"
+                    className='hidden md:block w-60 h-60 md:w-80 md:h-80 bg-indigo-500/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' 
+                    src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                  />
+                )}
+                <img 
+                  className='md:hidden w-60 bg-indigo-500/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' 
                   src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
                 />
-              )}
+              </div>
+              <div className='flex flex-col justify-center items-center'>
+                <h2 className='text-2xl font-bold md:text-3xl'>Gonzalo Jaime</h2>
+                <h3 className='text-2xl font-semibold mt-2 md:mt-4'>{t("developer")}</h3>
+                <div className='flex w-[50%] justify-center gap-4 mt-8'>
+                  <AnimatedLink href={"https://www.linkedin.com/in/gjaimeguinazu/"}>
+                    <Linkedin width={'64'} height={'64'} stroke={'#7c86ff'} strokeWidth={'1.5'}/>
+                  </AnimatedLink>
+                  <AnimatedLink href={"https://github.com/GzaJai"}>
+                    <Github width={'64'} height={'64'} stroke={'#7c86ff'} strokeWidth={'1.5'}/>
+                  </AnimatedLink>
+                </div>
+              </div>
             </div>
-            <h2 className='text-2xl font-bold'>Gonzalo Jaime</h2>
-            <h3 className='text-2xl font-semibold mt-2'>{t("developer")}</h3>
-            <div className='flex w-[50%] justify-center gap-4 mt-8'>
-              <AnimatedLink href={"https://www.linkedin.com/in/gjaimeguinazu/"}>
-                <Linkedin width={'64'} height={'64'} stroke={'#7c86ff'} strokeWidth={'1.5'}/>
-              </AnimatedLink>
-              <AnimatedLink href={"https://github.com/GzaJai"}>
-                <Github width={'64'} height={'64'} stroke={'#7c86ff'} strokeWidth={'1.5'}/>
-              </AnimatedLink>
-            </div>
-          </div>
-        </section>
+          </section>
 
         <section id='about' className='mb-48'>
           <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>{t("aboutMe.title")}</h3>
