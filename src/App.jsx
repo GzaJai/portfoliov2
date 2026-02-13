@@ -124,7 +124,7 @@ function App() {
 
         </section>
         <section id="projects" className='mt-10'>
-          <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>{t("projects.title")}</h3>
+          <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:pt-24 md:w-[40%]'>{t("projects.title")}</h3>
           <ProjectWrapper seeAllText={t("projects.seeAllBtn")} seeLessText={t("projects.seeLessBtn")} projects={projects} lang={i18n.language}/>
         </section>
         <section id='contact' className='my-18'>
