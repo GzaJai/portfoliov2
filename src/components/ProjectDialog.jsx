@@ -98,15 +98,15 @@ const ProjectDialog = ({ isOpen, onClose, project, lang }) => {
                             </div>
                         </div>
 
-                        <div className='absolute bottom-20 left-0 right-0 flex w-full justify-center gap-24 pt-4'>
+                        <div className='absolute bottom-32 left-0 right-0 flex w-[50%] justify-center gap-24 pt-4'>
                             <Tooltip textContent={'Repository'}>
                                 <a href={project.repository} target="_blank" rel="noopener noreferrer">
-                                    <Github width={64} height={64} stroke={'#ffffff'} strokeWidth={'2'} />
+                                    <Github width={48} height={48} stroke={'#ffffff'} strokeWidth={'2'} />
                                 </a>
                             </Tooltip>
                             <Tooltip textContent={'Website'}>
                                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                                    <LinkIcon width={64} height={64} stroke={'#ffffff'} strokeWidth={'2'} />
+                                    <LinkIcon width={48} height={48} stroke={'#ffffff'} strokeWidth={'2'} />
                                 </a>
                             </Tooltip>
                         </div>
