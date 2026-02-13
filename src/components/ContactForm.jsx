@@ -70,7 +70,7 @@ const ContactForm = () => {
             </AnimatePresence>
 
             <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[40%]'>{t("contact.title")}</h3>
-            <form onSubmit={handleSubmit} className="flex flex-col w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl py-12 px-6 items-center md:w-[40%]">
+            <form onSubmit={handleSubmit} className="flex flex-col w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl py-12 px-6 items-center md:w-[50%]">
                 <h4 className='font-bold text-xl pb-8'>{t("contact.title2")}</h4>
                 <div className="p-4 flex flex-col w-[90%] gap-3 md:w-[75%] ">
                     <label htmlFor="from_name" className='font-bold w-[40%]'>{t("contact.nameLabel")}</label>
