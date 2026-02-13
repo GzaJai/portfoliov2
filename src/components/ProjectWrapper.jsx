@@ -18,16 +18,21 @@ const ProjectWrapper = ({ projects, seeAllText, seeLessText, lang }) => {
     showAll ? setShowAll(false) : setShowAll(true);
   }
 
+  const itemsToShow = showAll ? projects.length : (window.innerWidth >= 768 ? 4 : 2);
+
   return (
     <>
       <div className='flex flex-col gap-4'>
-          {
-            projects
-              .slice(0, showAll ? projects.length : 2)
-              .map((p) => (
-                  <ProjectCard key={p.id} onClick={() => handleClick(p)} projectName={p.translations[lang].title} projectUrl={p.url} imageUrl={p.image}/>
-              ))
-          }
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-y-20 md:w-[60%] mx-auto'>
+            {
+              projects
+                .slice(0, itemsToShow)
+                .map((p) => (
+                    <ProjectCard key={p.id} onClick={() => handleClick(p)} projectName={p.translations[lang].title} projectUrl={p.url} imageUrl={p.image}/>
+                ))
+            }
+          </div>
+          
           {showAll ?
             <button onClick={handleSeeAll} className='flex flex-col mx-auto w-[40%] items-center gap-4 p-2 rounded-lg font-bold text-xl'>
                 <CircleArrowUp width={'48'} height={'48'} stroke={'#ffffde'} strokeWidth={'1.5'} />
