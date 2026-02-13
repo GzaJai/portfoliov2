@@ -72,7 +72,7 @@ const ContactForm = () => {
             <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[40%]'>{t("contact.title")}</h3>
             <form onSubmit={handleSubmit} className="flex flex-col w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl py-12 px-6 items-center md:w-[40%]">
                 <h4 className='font-bold text-xl pb-8'>{t("contact.title2")}</h4>
-                <div className="p-4 flex flex-col w-[90%] gap-3 md:w-[75%]">
+                <div className="p-4 flex flex-col w-[90%] gap-3 md:w-[75%] ">
                     <label htmlFor="from_name" className='font-bold w-[40%]'>{t("contact.nameLabel")}</label>
                     <input type="text" name="from_name" id="from_name" className='h-8 rounded-md max-w-70 p-3 border border-indigo-100/40 md:w-full' placeholder={t("contact.namePlaceholder")}  />
                 </div>
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 </div>
                 <div className="p-4 flex flex-col w-[90%] gap-3 md:w-[75%]">
                     <label htmlFor="message" className='font-bold w-[40%]'>{t("contact.messageLabel")}</label>
-                    <textarea name="message" id="message" className='h-24 rounded-md p-3 border border-indigo-100/40 md:h-48 md:w-128' />
+                    <textarea name="message" id="message" className='h-24 rounded-md p-3 border border-indigo-100/40 md:h-48 md:w-[100%]' />
                 </div>
 
                 <button 
