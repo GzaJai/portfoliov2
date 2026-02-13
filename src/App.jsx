@@ -77,7 +77,7 @@ function App() {
         </section>
 
         <main>
-          <section id='hero' className='md:pt-3 md:pb-32'>
+          <section id='hero' className='md:pt-3 md:pb-24'>
             <div className="flex w-[90%] mx-auto my-54 items-center justify-center gap-4 md:gap-24 max-sm:flex-col">
               <div className='w-60 h-60 flex items-center justify-center md:w-80 md:h-80'>
                 {!scrolled && (
@@ -109,13 +109,13 @@ function App() {
           </section>
 
         <section id='about' className='mb-48'>
-          <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>{t("aboutMe.title")}</h3>
-          <div className="w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl p-12">
-            <div className='flex flex-col w-full gap-3'>
+          <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 pt-24 md:w-[40%]'>{t("aboutMe.title")}</h3>
+          <div className="w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl p-12 md:p-16 md:w-[55%]">
+            <div className='flex flex-col w-full gap-3 mx-auto md:text-xl  md:w-[90%]'>
                 <p>{t("aboutMe.text1")}</p>
                 <p>{t("aboutMe.text2")}</p>
                 <p>{t("aboutMe.text3")}</p>
-                <p className='text-center font-semibold pt-8 pb-4'>{t("aboutMe.cvText")}</p>
+                <p className='text-center font-semibold text-2xl pt-8 pb-4'>{t("aboutMe.cvText")}</p>
               </div>
               <AnimatedLink className={'mx-auto w-full'} href={"https://drive.google.com/file/d/1redMsxAEaUpyPs-slkqpAG9fZxGjFUbX/view?pli=1"}>
                 <CV width={'64'} height={'64'} stroke={'#ffffffde'} strokeWidth={'1.5'} />
