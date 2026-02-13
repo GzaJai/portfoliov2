@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
 import './App.css'
 import CustomLink from './components/CustomLink'
 import dataFromJson from './data.json'
@@ -49,12 +50,22 @@ function App() {
     
     return (
       <>
-      <section id='home' className='w-full'>
-        <header className={`duration-200 rounded-b-2xl w-[90%] ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
+      <AnimatePresence mode="popLayout">
+        <section id='home' className='w-full'>
+          <header className={`duration-200 rounded-b-2xl w-[90%] ${scrolled ? "backdrop-blur-md" : "mt-4"}`}>
             <div className='flex h-20 w-full px-20 items-center justify-between'>
-              <div className='max-md:hidden'>
-                <img className='w-20  bg-indigo-400 p-[.1rem] rounded-full max-md:hidden' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'/>
-                <p className='ml-10 w-[18rem] text-4xl font-bold'>Gonzalo Jaime</p>
+              <div className='max-md:hidden flex items-center gap-4'>
+                <div className='w-20 h-20 flex items-center justify-center'>
+                  {scrolled && (
+                    <motion.img 
+                      layoutId="profile-image"
+                      className='w-16 h-16 bg-indigo-500/40 p-[.1rem] rounded-full' 
+                      src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
+                    />
+                  )}
+                </div>
+                <p className='text-4xl font-bold'>Gonzalo Jaime</p>
               </div>
               <nav className="flex w-full items-center justify-center z-50">
                 <li><CustomLink text={t("nav.about")} href={"#about"} /></li>
@@ -62,12 +73,22 @@ function App() {
                 <li><CustomLink text={t("nav.contact")} href={"#contact"} /></li>
               </nav>
             </div>
-        </header>
-      </section>
+          </header>
+        </section>
+
       <main>
         <section id='hero'>
           <div className="flex flex-col my-54 items-center gap-4">
-            <img className='w-60 bg-indigo-500/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png' />
+            <div className='w-60 h-60 flex items-center justify-center'>
+              {!scrolled && (
+                <motion.img 
+                  layoutId="profile-image"
+                  className='w-60 h-60 bg-indigo-500/40 p-4 rounded-full backdrop-blur-glass backdrop-filter backdrop-blur-md' 
+                  src='https://raw.githubusercontent.com/GzaJai/portfoliov2/refs/heads/master/public/yo-portfolio.png'
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                />
+              )}
+            </div>
             <h2 className='text-2xl font-bold'>Gonzalo Jaime</h2>
             <h3 className='text-2xl font-semibold mt-2'>{t("developer")}</h3>
             <div className='flex w-[50%] justify-center gap-4 mt-8'>
@@ -79,8 +100,8 @@ function App() {
               </AnimatedLink>
             </div>
           </div>
-          
         </section>
+
         <section id='about' className='mb-48'>
           <h3 className='w-[60%] mx-auto mb-7 font-bold text-3xl text-indigo-300 md:w-[50%]'>{t("aboutMe.title")}</h3>
           <div className="w-[90%] mx-auto bg-linear-to-br from-indigo-500/20 via-purple-500/10 to-transparent backdrop-blur-md rounded-[39px] shadow-2xl p-12">
@@ -107,7 +128,8 @@ function App() {
             <a href="https://www.linkedin.com/in/gjaimeguinazu/" target='_blank'>Gonzalo Jaime </a>
              - {t("footer")} ❤️
         </section>
-      </main>
+        </main>
+      </AnimatePresence>
       <ScrollToTop isVisible={showScrollTop} />
       <TranslationBtn />
     </>
