@@ -78,7 +78,7 @@ function App() {
 
         <main>
           <section id='hero' className='md:pt-3 md:pb-24'>
-            <div className="flex w-[90%] mx-auto my-54 items-center justify-center gap-4 md:gap-24 max-sm:flex-col">
+            <div className="flex w-[90%] mx-auto my-[10%] items-center justify-center gap-4 md:gap-24 max-sm:my-[50%] max-sm:flex-col">
               <div className='w-60 h-60 flex items-center justify-center md:w-80 md:h-80'>
                 {!scrolled && (
                   <motion.img 
