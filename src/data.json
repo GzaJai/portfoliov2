@@ -90,27 +90,6 @@
             "development_process": "The game logic was designed around randomization and matching mechanics, including user interaction handling and visual feedback."
           }
         }
-      },
-      {
-        "id": 4,
-        "image": "gtn-compressed",
-        "url": "https://guess-the-number.gonzalojaime.codes/",
-        "repo": "https://github.com/GzaJai/AdivinaElNumero",
-        "stack": ["JavaScript", "HTML", "CSS"],
-        "translations": {
-          "es": {
-            "title": "Adivina el Número",
-            "description": "Juego de lógica en el que el usuario debe adivinar un número secreto de cuatro dígitos, recibiendo pistas sobre aciertos parciales.",
-            "purpose": "Implementar lógica condicional y algoritmos de validación utilizando JavaScript puro.",
-            "development_process": "El principal desafío fue diseñar el algoritmo de comparación entre intento y número secreto. Se trabajó sobre eventos, validaciones y actualización dinámica de la interfaz. Se realizaron mejoras en feedback y manejo de errores."
-          },
-          "en": {
-            "title": "Guess the Number",
-            "description": "Logic-based game where the player attempts to guess a secret four-digit number.",
-            "purpose": "To implement game logic and conditional evaluation mechanics.",
-            "development_process": "The core challenge was designing the validation algorithm and updating the UI dynamically based on user attempts."
-          }
-        }
       }
     ]
   }
