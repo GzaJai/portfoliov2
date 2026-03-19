@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { supabase } from './lib/supabase';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css'
 import CustomLink from './components/CustomLink'
@@ -48,6 +49,17 @@ function App() {
       return () => window.removeEventListener('scroll', handleScroll)
     }, []);
     
+    useEffect(() => {
+      const test = async () => {
+        const { data, error } = await supabase.from("visits").select("*");
+
+        console.log("data:", data);
+        console.log("error:", error);
+      };
+
+      test();
+    }, []);
+
     return (
       <>
       <AnimatePresence mode="popLayout">
