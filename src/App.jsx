@@ -13,6 +13,7 @@ import CV from './components/icons/CV';
 import ContactForm from './components/ContactForm'
 import ScrollToTop from './components/ScrollToTop';
 import TranslationBtn from './components/TranslationBtn';
+import VisitCounter from './components/VisitCounter';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,17 +48,6 @@ function App() {
       
       window.addEventListener('scroll', handleScroll)
       return () => window.removeEventListener('scroll', handleScroll)
-    }, []);
-    
-    useEffect(() => {
-      const test = async () => {
-        const { data, error } = await supabase.from("visits").select("*");
-
-        console.log("data:", data);
-        console.log("error:", error);
-      };
-
-      test();
     }, []);
 
     return (
@@ -142,7 +132,10 @@ function App() {
         <section id='contact' className='my-18'>
           <ContactForm translationText={t("contact")} />
         </section>
-        <section id='footer' className='w-full h-12 text-center'>
+        <section id="visits" className='w-full pt-4 pb-12 text-center'>
+             <VisitCounter text={t("visits")} />
+        </section>
+        <section id='footer' className='w-full h-20 flex mx-auto items-start justify-center text-center'>
             <a href="https://www.linkedin.com/in/gjaimeguinazu/" target='_blank'>Gonzalo Jaime </a>
              - {t("footer")} ❤️
         </section>

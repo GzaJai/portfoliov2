@@ -27,5 +27,6 @@
         "messageLabel": "Message",
         "sendBtn": "Send Message"
     },
+    "visits": "Visits",
     "footer": "made with "
 }
